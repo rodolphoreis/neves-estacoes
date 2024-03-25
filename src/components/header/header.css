@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Amsterdam";
+  src: url("https://www.dafont.com/pt/amsterdam-4.font") format("woff2"),
+    url("https://www.dafont.com/pt/amsterdam-4.font") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  z-index: 20;
+  top: -26px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 71px;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.neves,
+.estacoes {
+  font-size: 94px;
+  font-family: "Amsterdam";
+  color: #cb7711;
+}
+
+header nav {
+  display: flex;
+  height: 41px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #cb7711;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 2rem;
+  transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+  font-size: 1.4rem;
+  color: rgb(191, 152, 84);
+}
+header nav ul li a {
+  position: relative;
+  animation-name: menu;
+  animation-duration: 1s;
+  transition: 100ms;
+}
+
+header nav ul li a .FiLogOut {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.whatsapp-link {
+  cursor: pointer;
+  font-size: 27px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #cb7711;
+  padding: 12px 12px 5px;
+  transition: all 250ms linear 0s;
+  margin-left: 30px;
+}
+.whatsapp-link:hover {
+  cursor: pointer;
+  font-size: 22px;
+  text-decoration: none;
+  background-color: #cb7711;
+  color: white;
+}
+
+@keyframes menu {
+  0% {
+    left: 0px;
+    top: -100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .menu-section nav {
+    display: none;
+    z-index: 15;
+  }
+  .whatsapp-link {
+    margin-left: 0px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #cb7711;
+    height: 3px;
+    width: 63%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /*Fullscreen*/
+  .menu-section.on {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background: #cb7711;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 4px;
+    top: 41px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+    background-color: #fff;
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+    background-color: #fff;
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-section.on nav ul li {
+    margin: 10px 0;
+  }
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 24px;
+    display: block;
+    color: #fff;
+    padding: 1.8rem;
+    margin: auto;
+    background: none;
+  }
+
+  header nav ul li a .FiLogOut {
+    width: 40px;
+  }
+  .menu-section.on nav ul .hide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 630px) {
+  .neves,
+  .estacoes {
+    font-size: 69px;
+  }
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: -10px;
+    top: 29px;
+  }
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 24px;
+    display: block;
+    color: #fff;
+    padding: 1.8rem;
+    margin: auto;
+    background: none;
+  }
+  .menu-section.on {
+    height: 17vh;
+  }
+  html {
+    font-size: 70%;
+  }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-group {
+    display: block;
+  }
+}
+
+@media (max-width: 390px) {
+  .neves,
+  .estacoes {
+    font-size: 69px;
+  }
+  .menu-section.on {
+    height: 17vh;
+  }
+  ul {
+    margin-left: -44px;
+  }
+  .menu-section.on nav ul a {
+    font-size: 20px;
+    color: #fff;
+    background: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #cb7711;
+    height: 2px;
+    width: 63%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle {
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+  ul {
+    height: 40px;
+  }
+  .menu-section.on nav ul a {
+    padding: 1rem;
+  }
+}

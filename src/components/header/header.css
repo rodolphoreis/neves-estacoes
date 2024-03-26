@@ -8,7 +8,7 @@
 
 header {
   position: fixed;
-  z-index: 20;
+  z-index: 1000;
   top: -26px;
   margin-top: 20px;
   width: 100%;
@@ -110,11 +110,17 @@ header nav ul li a .FiLogOut {
     display: none;
     z-index: 15;
   }
+  nav {
+    height: 100%;
+  }
   .whatsapp-link {
     margin-left: 0px;
   }
   .logo {
     margin-top: 0;
+  }
+  li {
+    margin-top: -72px;
   }
 
   .one,
@@ -132,13 +138,12 @@ header nav ul li a .FiLogOut {
     margin-right: 20px;
   }
 
-  /*Fullscreen*/
   .menu-section.on {
     position: absolute;
     top: -4px;
     left: 0;
     width: 100vw;
-    height: 10vh;
+    height: 114px;
     background: #cb7711;
     z-index: 1000;
     display: flex;
@@ -247,6 +252,7 @@ header nav ul li a .FiLogOut {
   }
   ul {
     margin-left: -44px;
+    height: 40px;
   }
   .menu-section.on nav ul a {
     font-size: 20px;
@@ -266,9 +272,7 @@ header nav ul li a .FiLogOut {
     margin-right: 20px;
     margin-top: 25px;
   }
-  ul {
-    height: 40px;
-  }
+
   .menu-section.on nav ul a {
     padding: 1rem;
   }

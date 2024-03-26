@@ -1,0 +1,31 @@
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 681px;
+  width: 100%;
+}
+
+.imagem-container {
+  margin-left: 20px;
+}
+
+.imagem-container img {
+  width: 474px;
+
+  height: auto;
+}
+
+.texto-container {
+  max-width: 600px;
+}
+
+.texto-container h2 {
+  color: #333;
+}
+
+.texto-container p {
+  color: #666;
+}

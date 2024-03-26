@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/header/header";
 import Slideshow from "./components/slideshow/Slideshow";
+import SobreNeves from "./components/sobre/SobreNeves";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <div className="slideshow-container">
           <Slideshow />
         </div>
-        <h2>Olá</h2>
+        <SobreNeves />
       </div>
     </>
   );

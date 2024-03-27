@@ -1,4 +1,9 @@
-.slideshow-container {
+.container {
+  min-height: 60vh;
+  margin-bottom: 5em;
+}
+
+/* .slideshow-container {
   width: 100vw;
   position: fixed;
   top: 481px;
@@ -8,3 +13,4 @@
   align-items: center;
   z-index: 1000;
 }
+ */

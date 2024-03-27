@@ -1,17 +1,19 @@
 import "./App.css";
+import Capa from "./components/capa/Capa";
 import Header from "./components/header/header";
-import Slideshow from "./components/slideshow/Slideshow";
-import SobreNeves from "./components/sobre/SobreNeves";
+/* import Slideshow from "./components/slideshow/Slideshow"; */
+/* import SobreNeves from "./components/sobre/SobreNeves"; */
 
 function App() {
   return (
     <>
-      <div>
+      <div className="container">
         <Header />
-        <div className="slideshow-container">
+        {/* <div className="slideshow-container">
           <Slideshow />
-        </div>
-        <SobreNeves />
+        </div> */}
+        <Capa />
+        {/* <SobreNeves /> */}
       </div>
     </>
   );

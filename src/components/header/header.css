@@ -9,18 +9,19 @@
 header {
   position: fixed;
   z-index: 1000;
-  top: -26px;
-  margin-top: 20px;
+  top: 0px;
   width: 100%;
-  background-color: antiquewhite;
+  height: 119px;
+  background-color: #a7640a;
+  justify-content: space-between;
 }
 
-header .container {
+.header_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 71px;
-  width: 90%;
+  width: 75%;
   margin: auto;
   padding: 15px;
 }
@@ -34,7 +35,7 @@ header .container {
 .estacoes {
   font-size: 94px;
   font-family: "Amsterdam";
-  color: #cb7711;
+  color: antiquewhite;
 }
 
 header nav {
@@ -52,17 +53,20 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #cb7711;
-  font-size: 22px;
-  font-weight: 300;
+  color: antiquewhite;
+  font-size: 19px;
+  font-weight: 200;
   padding: 2rem;
-  transition: all 250ms linear 0s;
+  transition: color 0.3s;
+  font-family: "Grandstander", cursive;
+  text-shadow: 1px 1px 2px rgb(156, 153, 148);
 }
 
 header nav ul li a:hover {
-  font-size: 1.4rem;
-  color: rgb(191, 152, 84);
+  cursor: pointer;
+  color: #fff;
 }
+
 header nav ul li a {
   position: relative;
   animation-name: menu;
@@ -78,17 +82,17 @@ header nav ul li a .FiLogOut {
 
 .whatsapp-link {
   cursor: pointer;
-  font-size: 27px;
+  font-size: 19px;
   text-decoration: none;
   border-radius: 50%;
-  color: #cb7711;
+  color: antiquewhite;
   padding: 12px 12px 5px;
   transition: all 250ms linear 0s;
   margin-left: 30px;
 }
 .whatsapp-link:hover {
   cursor: pointer;
-  font-size: 22px;
+  font-size: 19px;
   text-decoration: none;
   background-color: #cb7711;
   color: white;

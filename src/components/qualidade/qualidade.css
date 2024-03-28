@@ -1,0 +1,134 @@
+.qualidade_container {
+  width: 100%;
+  padding-top: 30px;
+  position: absolute;
+  top: 1429px;
+}
+
+.imagem_qualidade_chocolate {
+  width: 58%;
+  height: auto;
+  transform: rotate(35deg);
+  position: relative;
+  top: 241px;
+  left: -12px;
+}
+
+.imagem_qualidade_morango {
+  width: 15.6%;
+  height: auto;
+  transform: rotate(-3deg);
+  position: relative;
+  top: -752px;
+  left: 632px;
+}
+.imagem_qualidade_morango2 {
+  width: 12%;
+  height: auto;
+  transform: rotate(8deg);
+  position: relative;
+  top: -622px;
+  left: 1004px;
+  opacity: 0.9;
+}
+
+.qualidade_container h2 {
+  font-family: "Grandstander", cursive;
+  font-size: 49px;
+  color: #000;
+  margin-top: 20px;
+  position: relative;
+  top: -447px;
+  left: 262px;
+  width: 780px;
+  color: #6d4005;
+  text-shadow: 2px 2px 2px white;
+}
+
+.paragrafo1 {
+  font-family: "Grandstander", cursive;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+  width: 46%;
+  line-height: 1.8;
+  position: relative;
+  top: -434px;
+  left: 570px;
+  color: #6d4005;
+  text-shadow: 1px 1px 2px white;
+  font-weight: bold;
+}
+.paragrafo2 {
+  font-family: "Grandstander", cursive;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+  width: 39%;
+  line-height: 1.8;
+  position: relative;
+  top: -99px;
+  left: 172px;
+  color: #6d4005;
+  text-shadow: 1px 1px 2px white;
+  font-weight: bold;
+}
+/* ---------------------------------------- */
+
+@media (max-width: 1200px) {
+  .imagem_qualidade_morango {
+    display: inline-block;
+    width: 15.6%;
+    transform: rotate(-3deg);
+    margin-top: -110px;
+    margin-left: 8%;
+  }
+
+  .imagem_qualidade_morango2 {
+    display: inline-block;
+    width: 12%;
+    transform: rotate(8deg);
+    margin-top: -125px;
+    margin-left: 8%;
+    opacity: 0.9;
+  }
+
+  .paragrafo1 {
+    width: 46%;
+    margin-top: 20px;
+    margin-left: calc(27% - 20px);
+  }
+
+  .paragrafo2 {
+    width: 39%;
+    margin-top: -10px;
+    margin-left: 27%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagem_qualidade_chocolate,
+  .imagem_qualidade_morango,
+  .imagem_qualidade_morango2 {
+    display: none;
+  }
+
+  .paragrafo1,
+  .paragrafo2 {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 340px) {
+  .qualidade_container h2 {
+    font-size: 20px;
+  }
+
+  .paragrafo1,
+  .paragrafo2 {
+    font-size: 14px;
+    width: 90%;
+    margin-left: 5%;
+  }
+}

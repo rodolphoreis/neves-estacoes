@@ -113,6 +113,22 @@ section {
   }
 }
 @media (max-width: 550px) {
+  .texto_h2 {
+    width: 391px;
+    margin-left: -35px;
+  }
+  .texto-container p {
+    width: 446px;
+    padding: 5px;
+    margin: 0;
+    margin-left: -42px;
+    margin-top: -60px;
+  }
+  .imagem-container img {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 390px) {
   section {
     margin-top: -35px;
     width: 100%;

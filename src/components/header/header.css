@@ -256,9 +256,11 @@ header nav ul li a .FiLogOut {
     height: 40px;
   }
   .menu-section.on nav ul a {
-    font-size: 19px;
+    font-size: 16px;
     color: #fff;
     background: none;
+    margin-top: 20px;
+    margin-left: 9px;
   }
   .menu-section.on nav ul {
     position: absolute;

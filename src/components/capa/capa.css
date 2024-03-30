@@ -56,11 +56,30 @@
   width: 500px;
 }
 
-@media (max-width: 1120px) {
-}
-
 @media (max-width: 630px) {
+  .texto_sobreposto h1 {
+    font-size: 69px;
+    margin-left: -25px;
+  }
+
+  .texto_sobreposto p {
+    font-size: 17px;
+    margin-left: -20px;
+    width: 401px;
+  }
 }
 
 @media (max-width: 390px) {
+  .texto_sobreposto h1 {
+    font-size: 49px;
+    margin-left: -10px;
+    width: 200px;
+  }
+
+  .texto_sobreposto p {
+    font-size: 20px;
+    margin-left: -2px;
+    width: 313px;
+    margin-top: -31px;
+  }
 }

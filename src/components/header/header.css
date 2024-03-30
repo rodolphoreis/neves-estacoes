@@ -161,7 +161,9 @@ header nav ul li a .FiLogOut {
     right: 4px;
     top: 41px;
   }
-
+  svg {
+    margin-top: 20px;
+  }
   .menu-section.on .menu-toggle .one {
     transform: rotate(45deg) translate(7px, 7px);
     background-color: #fff;
@@ -182,19 +184,21 @@ header nav ul li a .FiLogOut {
     flex-direction: row;
     align-items: center;
     padding: 0;
+    height: 32px;
   }
 
   .menu-section.on nav ul li {
     margin: 10px 0;
+    height: 0px;
+    position: relative;
+    top: -28px;
   }
   .menu-section.on nav ul a {
     font-size: 19px;
     display: block;
     color: #fff;
-    padding: 1.8rem;
-    margin: auto;
     background: none;
-    top: -51px;
+    top: -29px;
   }
 
   header nav ul li a .FiLogOut {
@@ -216,7 +220,7 @@ header nav ul li a .FiLogOut {
     width: 40px;
     height: 30px;
     margin-right: 5px;
-    margin-top: 22px;
+    margin-top: -19px;
   }
   .menu-section.on nav ul a {
     font-size: 19px;
@@ -225,9 +229,11 @@ header nav ul li a .FiLogOut {
     padding: 1.8rem;
     margin: auto;
     background: none;
+    position: relative;
+    top: -4px;
   }
   .menu-section.on {
-    height: 17vh;
+    height: 14vh;
   }
   html {
     font-size: 70%;
@@ -251,9 +257,13 @@ header nav ul li a .FiLogOut {
     height: 18.8vh;
   }
 
+  svg {
+    margin-top: 0px;
+  }
   ul {
     margin-left: -44px;
-    height: 40px;
+    position: absolute;
+    top: 10px;
   }
   .menu-section.on nav ul a {
     font-size: 16px;
@@ -261,6 +271,9 @@ header nav ul li a .FiLogOut {
     background: none;
     margin-top: 20px;
     margin-left: 9px;
+    position: relative;
+    top: -48px;
+    height: 0;
   }
   .menu-section.on nav ul {
     position: absolute;
@@ -285,7 +298,7 @@ header nav ul li a .FiLogOut {
     width: 40px;
     height: 30px;
     margin-right: 5px;
-    margin-top: -3px;
+    margin-top: -19px;
   }
 
   .menu-section.on nav ul a {

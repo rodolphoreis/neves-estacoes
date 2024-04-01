@@ -118,7 +118,7 @@
   }
   .morangos {
     width: 411px;
-    top: 619px;
+    top: 441px;
     left: 495px;
   }
   .imagem_qualidade_morango {
@@ -290,6 +290,15 @@
     opacity: 0.2;
   }
   .imagem_qualidade_morango {
-    width: 120px;
+    width: 141px;
+    margin-left: 106px;
+    margin-top: -72px;
+  }
+
+  .paragrafo1 {
+    font-size: 14px;
+  }
+  .paragrafo2 {
+    font-size: 14px;
   }
 }

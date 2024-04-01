@@ -11,6 +11,7 @@
   margin-bottom: 30px;
   margin: auto;
   position: relative;
+  margin-top: 64px;
 }
 
 .morangos {
@@ -292,62 +293,3 @@
     width: 120px;
   }
 }
-/*
-@media (max-width: 1200px) {
-  .imagem_qualidade_morango {
-    display: inline-block;
-    width: 15.6%;
-    transform: rotate(-3deg);
-    margin-top: -110px;
-    margin-left: 8%;
-  }
-
-  .imagem_qualidade_morango2 {
-    display: inline-block;
-    width: 12%;
-    transform: rotate(8deg);
-    margin-top: -125px;
-    margin-left: 8%;
-    opacity: 0.9;
-  }
-
-  .paragrafo1 {
-    width: 46%;
-    margin-top: 20px;
-    margin-left: calc(27% - 20px);
-  }
-
-  .paragrafo2 {
-    width: 39%;
-    margin-top: -10px;
-    margin-left: 27%;
-  }
-}
-
-@media (max-width: 768px) {
-  .imagem_qualidade_chocolate,
-  .imagem_qualidade_morango,
-  .imagem_qualidade_morango2 {
-    display: none;
-  }
-
-  .paragrafo1,
-  .paragrafo2 {
-    width: 90%;
-    margin-left: 5%;
-  }
-}
-
-@media (max-width: 340px) {
-  .qualidade_container h2 {
-    font-size: 20px;
-  }
-
-  .paragrafo1,
-  .paragrafo2 {
-    font-size: 14px;
-    width: 90%;
-    margin-left: 5%;
-  }
-}
- */

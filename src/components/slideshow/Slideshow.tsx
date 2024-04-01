@@ -1,3 +1,4 @@
+// Slideshow.js
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
@@ -5,30 +6,25 @@ import images from "./imagens";
 import "./slideshow.css";
 
 const variants = {
-  enter: (direction: number) => {
-    return {
-      x: direction > 0 ? "100%" : "-100%",
-      opacity: 0,
-    };
-  },
+  enter: (direction: number) => ({
+    x: direction > 0 ? "100%" : "-100%",
+    opacity: 0,
+  }),
   center: {
     zIndex: 1,
     x: 0,
     opacity: 1,
   },
-  exit: (direction: number) => {
-    return {
-      zIndex: 0,
-      x: direction < 0 ? "100%" : "-100%",
-      opacity: 0,
-    };
-  },
+  exit: (direction: number) => ({
+    zIndex: 0,
+    x: direction < 0 ? "100%" : "-100%",
+    opacity: 0,
+  }),
 };
 
 const swipeConfidenceThreshold = 10000;
-const swipePower = (offsetX: number, velocityX: number) => {
-  return Math.abs(offsetX) * velocityX;
-};
+const swipePower = (offsetX: number, velocityX: number) =>
+  Math.abs(offsetX) * velocityX;
 
 const Slideshow = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -62,6 +58,7 @@ const Slideshow = () => {
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}

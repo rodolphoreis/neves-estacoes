@@ -3,7 +3,9 @@ import "./servicos.css";
 const Servicos = () => {
   return (
     <section className="section_servicos">
-      <h2 className="titulo_servicos">Nossos Serviços</h2>
+      <h2 className="titulo_servicos" id="servicos">
+        Nossos Serviços
+      </h2>
       <div className="servicos_container">
         <div className="servico">
           <img src="/cone.jpeg" alt="Estação de brigadeiro" />

@@ -10,8 +10,6 @@ const header = () => {
       <div className="header_container">
         <div className="logo">
           <img src="/logo.png" alt="Logomarca" />
-          {/* <span className="neves">Neves</span>
-          <span className="estacoes">Estações</span> */}
         </div>
 
         <div
@@ -27,10 +25,13 @@ const header = () => {
           <nav>
             <ul>
               <li>
-                <a href="#about">Sobre</a>
+                <a href="#sobre">Sobre</a>
               </li>
               <li>
-                <a href="#serviços">Serviços</a>
+                <a href="#qualidade">Qualidade</a>
+              </li>
+              <li>
+                <a href="#servicos">Serviços</a>
               </li>
               <li>
                 <a href="#contatos">Contatos</a>

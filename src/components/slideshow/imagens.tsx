@@ -3,6 +3,7 @@ export const images = [
   "/broune.jpeg",
   "/nutela.jpeg",
   "/opcoes.jpeg",
+  "/prato.jpeg",
 ];
 
 export default images;

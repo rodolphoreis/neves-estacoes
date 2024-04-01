@@ -9,7 +9,7 @@ const Qualidade = () => {
           alt="Imagem de leite derramado"
           className="imagem_qualidade_chocolate"
         />
-        <h2>Nós nos preocupamos com você!</h2>
+        <h2 id="qualidade">Nós nos preocupamos com você!</h2>
         <p className="paragrafo1">
           Nossa dedicação à qualidade é evidente em cada produto que oferecemos.
           Desde a cuidadosa seleção do leite mais fresco até a elaboração dos

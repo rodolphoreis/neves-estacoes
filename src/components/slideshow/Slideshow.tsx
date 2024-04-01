@@ -7,7 +7,7 @@ import "./slideshow.css";
 const variants = {
   enter: (direction: number) => {
     return {
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? "100%" : "-100%",
       opacity: 0,
     };
   },
@@ -19,7 +19,7 @@ const variants = {
   exit: (direction: number) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
     };
   },
@@ -46,46 +46,45 @@ const Slideshow = () => {
 
     return () => clearInterval(interval);
   }, [page]);
-  return (
-    <>
-      <div className="slideshow-container">
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.img
-            key={page}
-            src={images[imageIndex]}
-            custom={direction}
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              x: { type: "spring", stiffness: 300, damping: 30 },
-              opacity: { duration: 0.2 },
-            }}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(event, info) => {
-              console.log(event);
-              const { offset, velocity } = info;
-              const swipe = swipePower(offset.x, velocity.x);
 
-              if (swipe < -swipeConfidenceThreshold) {
-                paginate(1);
-              } else if (swipe > swipeConfidenceThreshold) {
-                paginate(-1);
-              }
-            }}
-          />
-        </AnimatePresence>
-        <div className="next" onClick={() => paginate(1)}>
-          {"‣"}
-        </div>
-        <div className="prev" onClick={() => paginate(-1)}>
-          {"‣"}
-        </div>
+  return (
+    <div className="slideshow-container">
+      <AnimatePresence initial={false} custom={direction}>
+        <motion.img
+          key={page}
+          src={images[imageIndex]}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.2 },
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(event, info) => {
+            console.log(event);
+            const { offset, velocity } = info;
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        />
+      </AnimatePresence>
+      <div className="next" onClick={() => paginate(1)}>
+        {"‣"}
       </div>
-    </>
+      <div className="prev" onClick={() => paginate(-1)}>
+        {"‣"}
+      </div>
+    </div>
   );
 };
 

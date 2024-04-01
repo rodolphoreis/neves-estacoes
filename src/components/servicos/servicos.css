@@ -20,9 +20,7 @@
   flex-basis: 48%;
   margin-bottom: 20px;
 }
-.gotas {
-  width: 100%;
-}
+
 .titulo_servicos {
   text-align: center;
   font-size: 44px;
@@ -34,6 +32,11 @@
   width: 80%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.servico img:hover {
+  transform: scale(1.1);
 }
 
 .texto_servicos {
@@ -47,4 +50,16 @@
 
 p {
   color: antiquewhite;
+  margin-top: 24px;
+}
+@media (max-width: 390px) {
+  .titulo_servicos {
+    font-size: 22px;
+    margin: 20px auto 40px;
+  }
+  .texto_servicos {
+    font-size: 14px;
+    margin-top: 13px;
+    text-align: left;
+  }
 }

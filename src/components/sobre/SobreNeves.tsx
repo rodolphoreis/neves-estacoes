@@ -5,7 +5,9 @@ const SobreNeves = () => {
     <section>
       <div className="sobre-container">
         <div className="texto-container">
-          <h2 className="texto_h2">Conheça a Neves Estações</h2>
+          <h2 className="texto_h2" id="sobre">
+            Conheça a Neves Estações
+          </h2>
           <p>
             Bem-vindo à Neves Estações, onde transformamos eventos especiais em
             momentos inesquecíveis. Fundada pela paixão de Pedro Neves e Evelyn

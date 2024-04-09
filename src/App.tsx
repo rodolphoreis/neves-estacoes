@@ -1,5 +1,6 @@
 import "./App.css";
 import Capa from "./components/capa/Capa";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/header";
 import Qualidade from "./components/qualidade/Qualidade";
 import Servicos from "./components/servicos/Servicos";
@@ -16,6 +17,7 @@ function App() {
         <Qualidade />
         <Slideshow />
         <Servicos />
+        <Footer />
       </div>
     </>
   );
